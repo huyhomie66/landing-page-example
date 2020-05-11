@@ -1,0 +1,137 @@
+header {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+.col {
+  flex: 1;
+}
+.flag-select {
+  border: solid 1px #2188a2;
+  border-radius: 4px;
+}
+.brand,
+.brand-drawer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.brand > img {
+  width: 84px;
+  height: 60px;
+}
+.brand > h3,
+.brand-drawer > h3 {
+  font-size: 36px;
+  color: #2188a2;
+  margin: 0;
+  font-weight: 900;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navigation > a,
+.navigation-drawer > a {
+  font-size: 24px;
+  color: #2188a2;
+  text-decoration: none;
+  margin-right: 24px;
+  font-weight: 900;
+}
+
+.drop-btn {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .navigation > a,
+  .navigation-drawer > a {
+    padding-bottom: 10px;
+    font-family: "auto";
+    font-size: 16px;
+    color: #2188a2;
+    text-decoration: none;
+    margin-right: 24px;
+    font-weight: 900;
+  }
+
+  .navigation,
+  .navigation-drawer {
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .drawer-header > button > i {
+    font-size: 24px;
+    padding: 10px;
+    color: grey;
+  }
+
+  .brand-drawer {
+    flex-direction: row;
+  }
+
+  .brand > h3,
+  .brand-drawer > h3 {
+    font-size: 24px;
+    align-self: flex-end;
+    padding-bottom: 3px;
+  }
+
+  .brand > img,
+  .brand-drawer > img {
+    width: 48px;
+    height: 36px;
+  }
+
+  .drop-btn > i {
+    font-size: 30px;
+    color: #2188a2;
+  }
+  .drop-btn {
+    display: inline;
+  }
+  .drawer-header {
+    display: flex;
+    padding-bottom: 5px;
+    border-bottom: solid 2px lightblue;
+    flex-direction: row;
+  }
+  .navigation {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .drop-btn > i {
+    font-size: 20px;
+  }
+
+  .navigation,
+  .navigation-drawer > a {
+    font-size: 20px;
+  }
+
+  .brand > img {
+    width: 36px;
+    height: 30px;
+  }
+
+  .brand > img,
+  .brand > h3,
+  .drawer-header > button > i {
+    font-size: 20px;
+    align-self: flex-end;
+  }
+  .drawer-header > button > i {
+    color: #2188a2;
+  }
+}

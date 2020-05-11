@@ -1,0 +1,27 @@
+.accordion__button {
+  width: auto;
+}
+
+.faq-container {
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+  padding-right: -16px;
+  padding-left: -16px;
+
+  width: 100%;
+  flex-direction: column;
+  /* background-color: #f4f4f4; */
+}
+.faq-wrapper {
+  background-color: #f4f4f4;
+  width: 100%;
+}
+.accordion {
+  width: 100%;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.faq-container .item {
+  width: 100%;
+}

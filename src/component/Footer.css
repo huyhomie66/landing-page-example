@@ -1,0 +1,224 @@
+.footer-container {
+  padding-bottom: 5vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.footer-wrapper {
+  background-color: #2088a1;
+}
+
+.footer-title {
+  font-size: 48px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.decorator {
+  margin-top: -48px;
+  margin-bottom: 48px;
+  background-color: #f6b443;
+  height: 6px;
+  width: 6vw;
+}
+
+.copy-right {
+  max-height: 72px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #115464;
+}
+
+/* right  */
+
+.footer-container .col {
+  padding-left: 48px;
+  padding-right: 48px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.copy-right > p {
+  color: #bebebe;
+}
+
+.footer-container .col .phone {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-container .col .phone > i,
+.footer-container .col .phone > p {
+  color: #ffffff;
+  font-size: 48px;
+}
+
+.footer-container .col .logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 20vw;
+}
+
+.footer-container .col .logo .bwt {
+  height: 48px;
+  width: 48px;
+}
+.footer-container .col .logo .vt {
+  height: 96px;
+  width: 96px;
+}
+
+.footer-container .col .logo .moh {
+  height: 72px;
+  width: 72px;
+}
+/* left */
+
+.footer-container .col {
+  flex: 3;
+}
+
+.footer-container .col .input-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-container .col > form {
+  display: flex;
+  height: 1 0vh;
+  flex-direction: column;
+}
+
+.footer-container .col > form > input {
+  margin-top: 1vh;
+  height: 36px;
+  font-size: 16px;
+  width: 40vw;
+  background-color: #ffffff;
+}
+.footer-container .col .input-row {
+  width: 40.7vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container .col > form .input-row > input {
+  height: 36px;
+  width: 46.5%;
+  font-size: 16px;
+}
+.footer-container .col > form > textarea {
+  resize: none;
+  margin-top: 1vh;
+  font-size: 16px;
+  width: 40vw;
+  height: 135px;
+  background-color: #ffffff;
+}
+
+.footer-container .col > form > button {
+  margin-top: 1vh;
+  font-family: Myriad Pro;
+  background-color: #f6b443;
+  width: 20vw;
+  height: 48px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+@media screen and (max-width: 1025px) {
+  .footer-container .col > form > input {
+    /* margin-top: 1vh; */
+  }
+  .decorator {
+    margin-top: 20px;
+    margin-bottom: 48px;
+    width: 15vw;
+  }
+  .footer-container .col .footer-title {
+    padding-top: 4vh;
+    margin-bottom: -1vh;
+  }
+  .footer-wrapper {
+    padding-left: -24px;
+    padding-right: -24px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  /* left  */
+  .footer-container .col > div > p {
+    align-self: center;
+  }
+
+  .footer-container .col > form .input-row {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-container .col > form {
+    align-items: center;
+  }
+
+  .footer-container .col > form > input,
+  .footer-container .col > form .input-row > input,
+  .footer-container .col > form > textarea {
+    width: 80vw;
+    font-size: 16px;
+  }
+
+  .footer-container .col > form > button {
+    font-size: 16px;
+    width: 80vw;
+  }
+  /* right  */
+  .footer-container .col {
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer-title {
+    text-align: center;
+    font-size: 48px;
+  }
+  .footer-container .col .logo img {
+    height: 96px;
+    width: 96px;
+  }
+  .footer-container .col .logo {
+    width: 40vw;
+  }
+  .footer-container .col .phone > i,
+  .footer-container .col .phone > p {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-container .col > form {
+    align-items: center;
+  }
+
+  .footer-container .col .logo {
+    width: 80vw;
+  }
+  .footer-title {
+    font-size: 36px;
+  }
+}

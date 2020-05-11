@@ -1,0 +1,31 @@
+.banner-pt {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.banner-pt h1 {
+  font-size: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+#animation {
+  width: 50vw;
+}
+
+@media screen and (max-width: 600px) {
+  .banner-pt h1 {
+    font-size: 24px;
+  }
+
+  #animation {
+    width: 80vw;
+  }
+}

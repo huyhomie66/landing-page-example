@@ -1,0 +1,55 @@
+.app-funcs {
+  flex-wrap: wrap;
+}
+.app-funcs-wrapper {
+  background-color: #f6f6f6;
+  padding-top: 80px;
+  margin-top: 32px;
+}
+.app-funcs .col {
+  flex-basis: 50%;
+  padding-left: 32px;
+  padding-right: 32px;
+  box-sizing: border-box;
+  margin-bottom: 64px;
+}
+.app-funcs .col img {
+  width: 142px;
+  height: 160px;
+}
+.app-funcs .col h3 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #575757;
+}
+.app-funcs .col p {
+  color: #575757;
+  font-size: 16px;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1025) {
+  .app-funcs {
+    margin-left: -32px;
+    margin-right: -32px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app-funcs .col img {
+    width: 71px;
+    height: 80px;
+  }
+  .app-funcs .col {
+    flex-basis: 100%;
+  }
+  .app-funcs {
+    margin-left: -0px;
+    margin-right: -0px;
+  }
+  .app-funcs .col {
+    align-items: center;
+    justify-content: center;
+  }
+}

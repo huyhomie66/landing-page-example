@@ -1,0 +1,28 @@
+.covitrack-work .col {
+  padding-left: 32px;
+  padding-right: 32px;
+  flex: 1;
+  padding-bottom: 48px;
+}
+
+.covitrack-work .col p {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 1025px) {
+  .covitrack-work {
+    margin-left: -32px;
+    margin-right: -32px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .covitrack-work {
+    flex-direction: column-reverse;
+    margin-left: -0px;
+    margin-right: -0px;
+  }
+  .covitrack-work .col p {
+    font-size: 16px;
+  }
+}
