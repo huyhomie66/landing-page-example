@@ -11,10 +11,9 @@ const FooterLeft = () => {
     try {
       await axios.post("/reach", { form });
       alert(t("sendInfoSuccess"));
-    } catch (error) {
       reset(form);
       clearError();
-    }
+    } catch (error) {}
   };
   const { t } = useTranslation();
 
