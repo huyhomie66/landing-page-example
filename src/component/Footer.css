@@ -109,7 +109,7 @@
 .footer-container .col > form > input {
   margin-top: 1vh;
   height: 36px;
-  font-size: 16px;
+  font-size: 20px;
   width: 40vw;
   background-color: #ffffff;
 }
@@ -122,12 +122,12 @@
 .footer-container .col > form .input-row > input {
   height: 36px;
   width: 46.5%;
-  font-size: 16px;
+  font-size: 20px;
 }
 .footer-container .col > form > textarea {
   resize: none;
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 20px;
   width: 40vw;
   height: 135px;
   background-color: #ffffff;

@@ -12,20 +12,17 @@
   font-size: 36px;
 }
 .info-pt-container .p {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .info-pt-container > button {
   margin-top: 7vh;
-  width: 33vw;
-  height: 11.8vh;
-  border-radius: 10px;
   font-size: 36px;
+  padding: 20px 40px 20px 40px;
   font-weight: bold;
   color: white;
   font-family: Myriad Pro;
   background-color: #2088a1;
-  border-radius: 10px;
   background-color: #2088a1;
   text-align: center;
   display: flex;
@@ -35,9 +32,8 @@
 @media screen and (max-width: 1025px) {
   .info-pt-container > button {
     margin-top: 3vh;
-    width: 60vw;
-    height: 7vh;
     font-size: 24px;
+    padding: 20px;
   }
 }
 
