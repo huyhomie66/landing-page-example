@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import animationData from "../animationData/animation_06.json";
 import Container from "./Container.js";
 import "./BannerProtect.css";
+import { useTranslation } from "react-i18next";
 
 export default () => {
   useEffect(() => {
@@ -14,6 +15,7 @@ export default () => {
     });
   }, []);
 
+  const { t } = useTranslation();
   return (
     <div
       style={{
@@ -21,10 +23,7 @@ export default () => {
       }}
     >
       <Container className="banner-pt" wrapperClassName="banner-pt-wrapper">
-        <h1>
-          CoviTrack sẽ bảo vệ bạn và gia đình khỏi nguy cơ nhiễm bệnh bằng cách
-          nào?
-        </h1>
+        <h1>{t("protect")}</h1>
         <div id="animation"></div>
       </Container>
     </div>

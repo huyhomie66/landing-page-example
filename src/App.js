@@ -33,14 +33,14 @@ const Home = () => {
 function App() {
   return (
     <I18nextProvider i18n={i18n}>
-      <Header />
       <Router>
+        <Header />
         <Switch>
           <Route exact component={FAQ} path="/faq" />
           <Route exact component={Home} path="/" />
         </Switch>
+        <Footer />
       </Router>
-      <Footer />
     </I18nextProvider>
   );
 }

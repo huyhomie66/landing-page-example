@@ -4,24 +4,32 @@ export default {
   phone: "Số điện thoại",
   content: "Nội dung",
   submit: "Gửi thông tin",
-  askButton: "Ask Questions",
+  askButton: "Câu hỏi thường gặp",
+  required: "Thông tin sai định dạng",
   infoProtected: [
     "Mọi thông tin sẽ được bảo mật dưới dạng chữ ký, thay đổi hàng ngày",
-    "Càng nhiều người dùng CoviTrack, bạn càng được bảo vệ.Hãy cài app và giúp mọi người cài nhé",
+    "Càng nhiều người dùng CoviTrack, bạn càng được bảo vệ.",
+    "Hãy cài app và giúp mọi người cài nhé",
   ],
   header: ["Giới thiệu", "Câu hỏi thường gặp"],
   moh: [
     "Khi một người bị phát hiện hoặc nghi ngờ nhiễm bệnh",
     "Cơ quan Y tế có thẩm quyền sẽ yêu cầu được truy cập vào dữ liệu này để nhanh chóng khoanh vùng những người từng tiếp xúc trực tiếp hoặc gián tiếp, dù bạn có quen biết họ hay không.",
   ],
-  banner: {
-    title: "CoviTrack bảo vệ người dùng và cộng đồng",
-    descriptions: [
-      "Sử dụng công nghệ Bluetooth Low Energy để đánh dấu những trường hợp tiếp xúc gần trong cộng đồng",
-      "Kết hợp vs công nghệ định vị để không bỏ qua các trường hợp tiếp xúc gián tiếp Dựa trên tinh thần cộng đồng tình nguyện đóng góp dữ liệu",
-      "Và chỉ cần như vậy là bạn không còn phải lo sợ khi đi ra ngoài nữa",
-    ],
-  },
+  protect:
+    "CoviTrack sẽ bảo vệ bạn và gia đình khỏi nguy cơ nhiễm bệnh bằng cách nào?",
+  covitrackWork: [
+    "CoviTrack dùng tín hiệu Bluetooth để xác định mỗi khi điện thoại của bạn ở gần một CoviTracker khác",
+    "2 thiết bị sẽ trao đổi mã người dùng và ghi nhận sự tiếp xúc",
+    "Ngay cả khi hai CoviTracker không gặp nhau trực tiếp nhưng có lịch sử hành trình tương tự nhau, dữ liệu về địa điểm cũng sẽ được ghi nhận.",
+  ],
+  banner: [
+    "CoviTrack",
+    "Sử dụng công nghệ Bluetooth Low Energy để đánh dấu những trường hợp tiếp xúc gần trong cộng đồng",
+    "Kết hợp vs công nghệ định vị để không bỏ qua các trường hợp tiếp xúc gián tiếp",
+    "Dựa trên tinh thần cộng đồng tình nguyện đóng góp dữ liệu",
+    "Bảo vệ người dùng và Bảo vệ cộng đồng",
+  ],
   tutorial: [
     "Bảo vệ bản thân và cộng đồng khỏi Covid-19 chỉ với 2 bước đơn giản:",
     "1. Download và giúp người thân cài app CoviTrack",
@@ -87,6 +95,7 @@ export default {
   ],
   appfunc: [
     {
+      image: require("../assets/icon/covitrack1.svg"),
       title: "Bảo mật",
       descriptions: [
         "Xác thực số điện thoại bằng OTP của Bộ Y tế",
@@ -95,6 +104,7 @@ export default {
       ],
     },
     {
+      image: require("../assets/icon/covitrack2.svg"),
       title: "Quét chính xác, tốc độ cao",
       descriptions: [
         "Chỉ quét các thiết bị là người dùng trong hệ thống",
@@ -105,12 +115,14 @@ export default {
     },
     {
       title: "Ẩn danh",
+      image: require("../assets/icon/covitrack3.svg"),
       descriptions: [
         "Người dùng được ẩn danh với những người khác",
         "Chỉ khi nhiễm Covid-19 hoặc có nguy cơ lây nhiễm, bạn có thể chia sẻ dữ liệu này cho cơ quan Y tế có thẩm quyền",
       ],
     },
     {
+      image: require("../assets/icon/covitrack4.svg"),
       title: "Người dùng kiểm soát dữ liệu",
       descriptions: [
         "Người dùng có thể cho phép truy cập vị trí hoặc không",

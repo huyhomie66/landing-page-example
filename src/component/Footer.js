@@ -1,20 +1,50 @@
 import React from "react";
 import Container from "./Container";
 import "./Footer.css";
+import { useTranslation } from "react-i18next";
+import axios from "../utils/axiosInstance";
+import { useForm } from "react-hook-form";
 
 const FooterLeft = () => {
+  const { register, handleSubmit, errors, clearError, reset } = useForm();
+  const onSubmit = async (form) => {
+    try {
+      await axios.post("/reach", { form });
+    } catch (error) {
+      reset(form);
+      clearError();
+    }
+  };
+  const { t } = useTranslation();
+  const phoneValidate =
+    "/^(([+]{0,1}d{2})|d?)[s-]?[0-9]{2}[s-]?[0-9]{3}[s-]?[0-9]{4}$/gm";
+
   return (
     <div className="col">
-      <p className="footer-title">Liên Hệ</p>
+      <p className="footer-title">{t("contact")}</p>
       <div className="decorator" />
-      <form>
+      <form onSubmit={handleSubmit(onSubmit)}>
         <div className="input-row">
-          <input placeholder="Tên" />
-          <input placeholder="Email" />
+          <input
+            name="name"
+            placeholder={t("name")}
+            ref={register({ required: true })}
+          />
+          {errors.name && t("required")}
+          <input name="email" placeholder={t("email")} ref={register} />
         </div>
-        <input placeholder="Số điện thoại" />
-        <textarea placeholder="Nội dụng"></textarea>
-        <button>Gửi thông tin</button>
+        <input
+          name="phone"
+          placeholder={t("phone")}
+          ref={register({ required: true, minLength: 8, maxLength: 11 })}
+        />
+        {errors.phone && t("required")}
+        <textarea
+          name="content"
+          placeholder={t("content")}
+          ref={register}
+        ></textarea>
+        <button>{t("submit")}</button>
       </form>
     </div>
   );
@@ -26,7 +56,7 @@ const FooterRight = () => {
       <p className="footer-title">CoviTrack</p>
       <div className="decorator" />
       <div className="phone">
-        <i class="fa fa-phone" aria-hidden="true"></i>
+        <i className="fa fa-phone" aria-hidden="true"></i>
         <p>19009095</p>
       </div>
       <div className="logo">

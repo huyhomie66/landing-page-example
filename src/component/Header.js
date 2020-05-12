@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useCallback, useRef } from "react";
 import { Drawer } from "react-pretty-drawer";
 import ReactFlagsSelect from "react-flags-select";
 import "react-flags-select/css/react-flags-select.css";
 import { useTranslation } from "react-i18next";
-// import {} from
+import { Link } from "react-router-dom";
+
 import "./Header.css";
 import Container from "./Container";
 
@@ -13,17 +14,26 @@ const Header = () => {
   const openDrawer = () => setVisible(true);
 
   const ColNavigation = ({ className, showSelectedLabel }) => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const titles = t("header", { returnObjects: true });
 
-    const onSelect = () => {};
+    const onSelect = useCallback(
+      (lng) => {
+        i18n.changeLanguage(lng);
+      },
+      [i18n]
+    );
+
+    const selectFlagRef = useRef(null);
 
     return (
       <div className={className}>
-        <a href="/">{titles[0]}</a>
-        <a href="">{titles[1]}</a>
+        <Link to="/">{titles[0]}</Link>
+        <Link to="/faq">{titles[1]}</Link>
+
         <ReactFlagsSelect
+          ref={selectFlagRef}
           onSelect={onSelect}
           defaultCountry="VN"
           showSelectedLabel={showSelectedLabel}

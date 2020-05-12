@@ -4,18 +4,18 @@ import translationEN from "./en";
 import translationVI from "./vi";
 
 const resources = {
-  en: {
+  US: {
     translation: translationEN,
   },
-  vi: {
+  VN: {
     translation: translationVI,
   },
 };
 
 i18n.use(initReactI18next).init({
   resources,
-  fallbackLng: "vi",
-  lng: "vi",
+  fallbackLng: "VN",
+  lng: "VN",
   debug: false,
   interpolation: {
     escapeValue: false,

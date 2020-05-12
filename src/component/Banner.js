@@ -7,8 +7,6 @@ const Banner = () => {
   const { t } = useTranslation();
   const bannerContent = t("banner", { returnObjects: true });
 
-  console.log(bannerContent);
-
   return (
     <div
       className="banner"
@@ -17,11 +15,16 @@ const Banner = () => {
       }}
     >
       <Container>
-        <h1>{bannerContent.title}</h1>
+        <h1>
+          {bannerContent[0]} <br />
+        </h1>
         <div className="banner-description">
-          <p>{bannerContent.descriptions[0]}</p>
-          <p>{bannerContent.descriptions[1]}</p>
-          <p>{bannerContent.descriptions[2]}</p>
+          <p> {bannerContent[1]}</p>
+          <p>{bannerContent[2]}</p>
+          <p>{bannerContent[3]}</p>
+          <p>{bannerContent[4]}</p>
+          <p>{bannerContent[5]}</p>
+          <p>{bannerContent[6]}</p>
         </div>
         <div className="store-links">
           <a href="https://apps.apple.com/us/app/c%E1%BA%A3nh-b%C3%A1o-ti%E1%BA%BFp-x%C3%BAc-covitrack/id1509968978?ls=1">

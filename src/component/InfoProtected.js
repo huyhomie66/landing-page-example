@@ -2,8 +2,11 @@ import React, { useEffect } from "react";
 import animation5 from "../animationData/animation_05.json";
 import Container from "./Container.js";
 import "./InfoProtected.css";
+import { useHistory } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default () => {
+  const { push } = useHistory();
   useEffect(() => {
     window.lottie.loadAnimation({
       container: document.getElementById("animation5"),
@@ -13,18 +16,19 @@ export default () => {
       animationData: animation5,
     });
   }, []);
+  const { t } = useTranslation();
+  const infoProtected = t("infoProtected", { returnObjects: true });
 
   return (
     <Container className="info-pt-container">
       <div id="animation5"></div>
-      <p className="title-large">
-        Mọi thông tin sẽ được bảo mật dưới dạng chữ ký, thay đổi hàng ngày
-      </p>
+      <p className="title-large">{infoProtected[0]}</p>
       <p>
-        Càng nhiều người dùng CoviTrack, bạn càng được bảo vệ.
-        <br /> Hãy cài app và giúp mọi người cài nhé
+        {infoProtected[1]}
+        <br />
+        {infoProtected[2]}
       </p>
-      <button>Câu hỏi thường gặp</button>
+      <button onClick={() => push("/faq")}>{t("askButton")}</button>
     </Container>
   );
 };
