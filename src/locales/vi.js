@@ -16,6 +16,7 @@ export default {
     "Khi một người bị phát hiện hoặc nghi ngờ nhiễm bệnh",
     "Cơ quan Y tế có thẩm quyền sẽ yêu cầu được truy cập vào dữ liệu này để nhanh chóng khoanh vùng những người từng tiếp xúc trực tiếp hoặc gián tiếp, dù bạn có quen biết họ hay không.",
   ],
+  sendInfoSuccess: "Gửi thông tin thành công",
   protect:
     "CoviTrack sẽ bảo vệ bạn và gia đình khỏi nguy cơ nhiễm bệnh bằng cách nào?",
   covitrackWork: [

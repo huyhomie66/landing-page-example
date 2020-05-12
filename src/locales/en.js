@@ -15,6 +15,7 @@ export default {
     "When a user is found or suspected of being infected",
     "Health authority will require access to this data to quickly identify people who have had direct or indirect contact with that user, whether you know them or not.",
   ],
+  sendInfoSuccess: "Send information successfully",
   protect:
     "CoviTrack will protect you and your family from the risk of infection",
   covitrackWork: [

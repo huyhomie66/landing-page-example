@@ -10,6 +10,7 @@ const FooterLeft = () => {
   const onSubmit = async (form) => {
     try {
       await axios.post("/reach", { form });
+      alert(t("sendInfoSuccess"));
     } catch (error) {
       reset(form);
       clearError();
