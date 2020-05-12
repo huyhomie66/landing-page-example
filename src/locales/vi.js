@@ -5,7 +5,7 @@ export default {
   content: "Nội dung",
   submit: "Gửi thông tin",
   askButton: "Câu hỏi thường gặp",
-  required: "Thông tin sai định dạng",
+  required: "sai định dạng",
   infoProtected: [
     "Mọi thông tin sẽ được bảo mật dưới dạng chữ ký, thay đổi hàng ngày",
     "Càng nhiều người dùng CoviTrack, bạn càng được bảo vệ.",

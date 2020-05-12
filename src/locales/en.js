@@ -5,7 +5,7 @@ export default {
   content: "Content",
   submit: "Submit",
   askButton: "FAQ",
-  required: "Information wrong format",
+  required: "wrong format",
   infoProtected: [
     "All information will be kept confidential as signatures which are modified on a daily basis.",
     "The more people use CoviTrack, the more protected you will be.Please install the app and help your loved ones. ",

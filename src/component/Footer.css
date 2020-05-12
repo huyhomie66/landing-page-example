@@ -4,6 +4,11 @@
   justify-content: space-around;
   flex-direction: row;
 }
+.rq {
+  padding-top: 5px;
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 .footer-wrapper {
   background-color: #2088a1;

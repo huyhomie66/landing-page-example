@@ -28,15 +28,29 @@ const FooterLeft = () => {
             placeholder={t("name")}
             ref={register({ required: true })}
           />
-          {errors.name && t("required")}
-          <input name="email" placeholder={t("email")} ref={register} />
+
+          <input
+            name="email"
+            placeholder={t("email")}
+            ref={register({ maxLength: 40 })}
+          />
         </div>
+
         <input
           name="phone"
           placeholder={t("phone")}
-          ref={register({ required: true, minLength: 8, maxLength: 11 })}
+          ref={register({
+            required: true,
+            minLength: 8,
+            maxLength: 11,
+            pattern: "/^[+]?[(]?[0-9]{3}[)]?[-s.]?[0-9]{3}[-s.]?[0-9]{4,6}$/im",
+          })}
         />
-        {errors.phone && t("required")}
+        {errors.phone && (
+          <p className="rq">
+            {t("phone")} {t("required")}
+          </p>
+        )}
         <textarea
           name="content"
           placeholder={t("content")}
