@@ -24,6 +24,7 @@ export default {
     "2 thiết bị sẽ trao đổi mã người dùng và ghi nhận sự tiếp xúc",
     "Ngay cả khi hai CoviTracker không gặp nhau trực tiếp nhưng có lịch sử hành trình tương tự nhau, dữ liệu về địa điểm cũng sẽ được ghi nhận.",
   ],
+
   banner: [
     "CoviTrack",
     "Sử dụng công nghệ Bluetooth Low Energy để đánh dấu những trường hợp tiếp xúc gần trong cộng đồng",
