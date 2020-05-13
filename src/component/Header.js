@@ -38,11 +38,12 @@ const Header = () => {
           defaultCountry="VN"
           showSelectedLabel={showSelectedLabel}
           countries={["US", "VN"]}
-          showOptionLabel={false}
+          showOptionLabel={showSelectedLabel}
         />
       </div>
     );
   };
+
   const ColBrand = ({ className }) => {
     return (
       <div className={className}>
@@ -51,6 +52,7 @@ const Header = () => {
       </div>
     );
   };
+
   return (
     <header>
       <Drawer visible={visible} onClose={closeDrawer}>

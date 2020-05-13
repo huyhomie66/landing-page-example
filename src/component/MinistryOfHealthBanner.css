@@ -7,20 +7,15 @@
   background-image: url("../assets/image/gradient-02.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-left: -24px;
-  padding-right: -24px;
 }
 .moh-banner .title-small {
   text-align: center;
   color: #ffffff;
-  padding-left: 24px;
-  padding-right: 24px;
-  font-size: 20px;
+
+  font-size: 16px;
 }
 .moh-banner .title-large {
-  padding-left: 24px;
-  padding-right: 24px;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -29,8 +24,16 @@
   text-align: center;
   color: #ffffff;
 }
+#animation4 {
+  width: 80%;
+  align-self: center;
+}
 
 @media screen and (max-width: 600px) {
+  .moh-banner .title-small {
+    text-align: left;
+  }
+
   .moh-banner #animation4 {
     height: 30vh;
   }

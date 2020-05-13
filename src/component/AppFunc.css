@@ -14,17 +14,17 @@
   margin-bottom: 64px;
 }
 .app-funcs .col img {
-  width: 142px;
-  height: 160px;
+  width: 80px;
+  height: 80px;
 }
 .app-funcs .col h3 {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
   color: #575757;
 }
 .app-funcs .col p {
   color: #575757;
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 20px;
   margin-top: 0;
 }

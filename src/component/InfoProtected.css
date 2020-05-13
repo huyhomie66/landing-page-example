@@ -1,25 +1,30 @@
 .info-pt-container {
-  padding: 48px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  padding-top: 40px;
+  padding-bottom: 100px;
 }
-
+#animation5 {
+  padding-left: 260px;
+  padding-right: 260px;
+}
 .info-pt-container .title-large {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 24px;
 }
 .info-pt-container .p {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .info-pt-container > button {
-  margin-top: 7vh;
   font-size: 24px;
   font-weight: bold;
   font-family: sans-serif;
-  padding: 20px 40px 20px 40px;
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 20px 100px 20px 100px;
   color: white;
   background-color: #2088a1;
   background-color: #2088a1;

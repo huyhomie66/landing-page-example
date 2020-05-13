@@ -37,11 +37,13 @@
 
 @media screen and (max-width: 600px) {
   .banner-wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+
     min-height: unset;
   }
   .banner-container h1 {
-    margin-top: 330x;
-
+    margin-top: 230px;
     font-size: 32px;
   }
   .banner-container .banner-description {

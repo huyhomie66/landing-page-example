@@ -3,7 +3,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 0;
+  padding: 4px 0;
 }
 .col {
   flex: 1;
@@ -11,7 +11,11 @@ header {
 .flag-select {
   border: solid 1px #2188a2;
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .brand,
 .brand-drawer {
   display: flex;
@@ -21,12 +25,12 @@ header {
 }
 
 .brand > img {
-  width: 84px;
-  height: 60px;
+  width: 40px;
+  height: 30px;
 }
 .brand > h3,
 .brand-drawer > h3 {
-  font-size: 36px;
+  font-size: 24px;
   color: #2188a2;
   margin: 0;
   font-weight: 900;
@@ -38,7 +42,7 @@ header {
 }
 .navigation > a,
 .navigation-drawer > a {
-  font-size: 24px;
+  font-size: 16px;
   color: #2188a2;
   text-decoration: none;
   margin-right: 24px;
@@ -50,6 +54,10 @@ header {
 }
 
 @media screen and (max-width: 800px) {
+  .drawer-header > button {
+    background-color: white;
+    border: none;
+  }
   .navigation > a,
   .navigation-drawer > a {
     padding-bottom: 10px;
@@ -71,7 +79,6 @@ header {
   .drawer-header > button > i {
     font-size: 24px;
     padding: 10px;
-    color: grey;
   }
 
   .brand-drawer {
@@ -81,14 +88,12 @@ header {
   .brand > h3,
   .brand-drawer > h3 {
     font-size: 24px;
-    align-self: flex-end;
-    padding-bottom: 3px;
   }
 
   .brand > img,
   .brand-drawer > img {
-    width: 48px;
-    height: 36px;
+    width: 36px;
+    height: 28px;
   }
 
   .drop-btn > i {
@@ -96,11 +101,13 @@ header {
     color: #2188a2;
   }
   .drop-btn {
+    border-radius: 4px;
+    border: solid 0.5px #2188a2;
+    background-color: white;
     display: inline;
   }
   .drawer-header {
     display: flex;
-    padding-bottom: 5px;
     border-bottom: solid 2px lightblue;
     flex-direction: row;
   }
@@ -116,12 +123,17 @@ header {
 
   .navigation,
   .navigation-drawer > a {
-    font-size: 20px;
+    padding-bottom: 16px;
+    font-size: 16px;
+    font-weight: 400;
   }
 
   .brand > img {
     width: 36px;
     height: 30px;
+  }
+  .brand-drawer > h3 {
+    font-size: 20px;
   }
 
   .brand > img,

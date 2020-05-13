@@ -5,9 +5,9 @@
   flex-direction: column;
 }
 .banner-pt h1 {
-  font-size: 48px;
-  padding-left: 24px;
-  padding-right: 24px;
+  font-size: 36px;
+  padding-left: 96px;
+  padding-right: 96px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -28,6 +28,8 @@
 @media screen and (max-width: 600px) {
   .banner-pt h1 {
     font-size: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   #animation {

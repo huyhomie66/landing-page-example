@@ -9,12 +9,17 @@
   color: red;
 }
 
+.col-body {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer-wrapper {
   background-color: #2088a1;
 }
 
-.footer-title {
-  font-size: 48px;
+.footer-title > p {
+  font-size: 36px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -25,10 +30,10 @@
 }
 
 .decorator {
-  margin-top: -48px;
-  margin-bottom: 48px;
+  margin-top: -24px;
+  margin-bottom: 24px;
   background-color: #f6b443;
-  height: 6px;
+  height: 4px;
   width: 6vw;
 }
 
@@ -43,6 +48,11 @@
 
 /* right  */
 
+.col-body > p {
+  font-size: 16px;
+  color: white;
+}
+
 .footer-container .col {
   padding-left: 48px;
   padding-right: 48px;
@@ -55,20 +65,28 @@
   color: #bebebe;
 }
 
-.footer-container .col .phone {
-  align-items: center;
+.phone {
   display: flex;
   flex-direction: row;
+  padding: 40px;
 }
 
-.footer-container .col .phone > i,
-.footer-container .col .phone > p {
+.phone > a {
+  padding-left: 10px;
+}
+.col-body > p {
+  margin-top: -5px;
+}
+
+.phone > i,
+.phone > a {
+  text-decoration: none;
   color: #ffffff;
   font-weight: bold;
-  font-size: 64px;
+  font-size: 36px;
 }
 
-.footer-container .col .logo {
+.logo-container {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -80,8 +98,9 @@
   height: 72px;
 }
 
-.footer-container .col .logo .vt,
-.footer-container .col .logo .bwt {
+.logo-container .vt,
+.logo-container .bwt,
+.logo-container .moh {
   height: 64px;
 }
 
@@ -103,9 +122,10 @@
 }
 
 .footer-container .col > form > input {
-  margin-top: 1vh;
+  color: #aaaaaa;
+  margin-top: 10px;
   height: 36px;
-  font-size: 20px;
+  font-size: 16px;
   width: 40vw;
   background-color: #ffffff;
 }
@@ -116,14 +136,16 @@
 }
 
 .footer-container .col > form .input-row > input {
+  color: #aaaaaa;
   height: 36px;
-  width: 46.5%;
-  font-size: 20px;
+  width: 47%;
+  font-size: 16px;
 }
 .footer-container .col > form > textarea {
+  color: #aaaaaa;
   resize: none;
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 16px;
   width: 40vw;
   height: 135px;
   background-color: #ffffff;
@@ -132,25 +154,28 @@
 .footer-container .col > form > button {
   margin-top: 10px;
   font-weight: bold;
+  border-radius: 4px;
   font-family: sans-serif;
   background-color: #f6b443;
-  width: 20vw;
+  width: 15vw;
   height: 48px;
   font-size: 24px;
+  border: none;
   font-weight: bold;
   color: white;
 }
 
 @media screen and (max-width: 1025px) {
+  .col-body {
+    align-items: center;
+  }
+  .col-body > p {
+    text-align: center;
+  }
   .footer-container .col > form .input-row > input {
     margin-top: 10px;
   }
 
-  .decorator {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 20vw;
-  }
   .footer-container .col .footer-title {
     padding-top: 20px;
     margin-bottom: 0px;
@@ -189,61 +214,59 @@
 
   .footer-container .col > form > button {
     font-size: 16px;
-    width: 80vw;
+    width: 60vw;
+    border: none;
   }
   /* right  */
   .footer-container .col {
     align-items: center;
     flex-direction: column;
   }
-  .footer-title {
+  .footer-title > p {
     text-align: center;
-    font-size: 48px;
+    font-size: 24px;
   }
-  .footer-container .col .logo img {
+  .logo-container > img {
     height: 96px;
     width: 96px;
   }
-  .footer-container .col .logo {
+  .logo-container {
     width: 40vw;
   }
 
-  .footer-container .col .phone {
+  .phone {
     margin-top: -10px;
-  }
-
-  .footer-container .col .phone > i,
-  .footer-container .col .phone > p {
-    font-size: 36px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .footer-container .col .phone > p,
-  .footer-container .col .phone > i {
+  .phone > a,
+  .phone > i {
     font-size: 24px;
   }
 
-  .footer-container .col .logo .vt,
-  .footer-container .col .logo .bwt {
+  .logo-container .vt,
+  .logo-container .bwt {
     height: 52px;
   }
 
-  .footer-container .col .logo .moh {
-    height: 64px;
-    width: 72px;
+  .logo-container .moh {
+    height: 70px;
+    width: 70px;
   }
-  .footer-container .col > form {
+  .col-body > form {
     align-items: center;
   }
 
-  .footer-container .col .logo {
+  .logo-container {
     width: 80vw;
   }
 
   .decorator {
-    margin-top: 10px;
+    height: 2px;
+    margin-top: -20px;
     margin-bottom: 24px;
+    width: 20vw;
   }
   .footer-container .col {
     padding-left: 0px;
@@ -254,9 +277,19 @@
   }
 
   .footer-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     font-size: 36px;
   }
-  .footer-container .col .phone {
-    margin-top: -20px;
+
+  .phone > a,
+  .phone > i {
+    font-size: 24px;
+  }
+  .phone {
+    margin-bottom: 40px;
+    margin-top: 10px;
+    padding: 15px;
   }
 }
