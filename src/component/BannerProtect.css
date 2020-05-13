@@ -16,6 +16,11 @@
   text-align: center;
   color: #ffffff;
 }
+.banner-pt-wrapper {
+  background-image: url("../assets/image/gradient-02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #animation {
   width: 50vw;
 }

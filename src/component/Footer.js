@@ -31,7 +31,7 @@ const FooterLeft = () => {
 
           <input
             name="email"
-            placeholder={t("email")}
+            placeholder="Email"
             ref={register({ maxLength: 40 })}
           />
         </div>

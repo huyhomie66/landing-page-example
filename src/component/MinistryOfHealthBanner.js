@@ -18,16 +18,10 @@ export default () => {
   const { t } = useTranslation();
   const moh = t("moh", { returnObjects: true });
   return (
-    <div
-      style={{
-        backgroundImage: `url(${require("../assets/image/gradient-02.jpg")})`,
-      }}
-    >
-      <Container className="moh-banner">
-        <p className="title-large">{moh[0]}</p>
-        <p className="title-small">{moh[1]}</p>
-        <div id="animation4"></div>
-      </Container>
-    </div>
+    <Container className="moh-banner" wrapperClassName="moh-banner-wrapper">
+      <p className="title-large">{moh[0]}</p>
+      <p className="title-small">{moh[1]}</p>
+      <div id="animation4"></div>
+    </Container>
   );
 };

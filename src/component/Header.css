@@ -53,7 +53,6 @@ header {
   .navigation > a,
   .navigation-drawer > a {
     padding-bottom: 10px;
-    font-family: "auto";
     font-size: 16px;
     color: #2188a2;
     text-decoration: none;
@@ -129,9 +128,6 @@ header {
   .brand > h3,
   .drawer-header > button > i {
     font-size: 20px;
-    align-self: flex-end;
-  }
-  .drawer-header > button > i {
     color: #2188a2;
   }
 }

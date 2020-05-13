@@ -7,7 +7,6 @@
 .rq {
   padding-top: 5px;
   color: red;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer-wrapper {
@@ -65,7 +64,8 @@
 .footer-container .col .phone > i,
 .footer-container .col .phone > p {
   color: #ffffff;
-  font-size: 48px;
+  font-weight: bold;
+  font-size: 64px;
 }
 
 .footer-container .col .logo {
@@ -73,22 +73,18 @@
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  width: 20vw;
-}
-
-.footer-container .col .logo .bwt {
-  height: 48px;
-  width: 48px;
-}
-.footer-container .col .logo .vt {
-  height: 96px;
-  width: 96px;
+  width: 25vw;
 }
 
 .footer-container .col .logo .moh {
   height: 72px;
-  width: 72px;
 }
+
+.footer-container .col .logo .vt,
+.footer-container .col .logo .bwt {
+  height: 64px;
+}
+
 /* left */
 
 .footer-container .col {
@@ -135,7 +131,8 @@
 
 .footer-container .col > form > button {
   margin-top: 10px;
-  font-family: Myriad Pro;
+  font-weight: bold;
+  font-family: sans-serif;
   background-color: #f6b443;
   width: 20vw;
   height: 48px;
@@ -151,12 +148,12 @@
 
   .decorator {
     margin-top: 10px;
-    margin-bottom: 48px;
+    margin-bottom: 10px;
     width: 20vw;
   }
   .footer-container .col .footer-title {
-    padding-top: 4vh;
-    margin-bottom: -1vh;
+    padding-top: 20px;
+    margin-bottom: 0px;
   }
   .footer-wrapper {
     padding-left: -24px;
@@ -210,6 +207,11 @@
   .footer-container .col .logo {
     width: 40vw;
   }
+
+  .footer-container .col .phone {
+    margin-top: -10px;
+  }
+
   .footer-container .col .phone > i,
   .footer-container .col .phone > p {
     font-size: 36px;
@@ -217,6 +219,20 @@
 }
 
 @media screen and (max-width: 600px) {
+  .footer-container .col .phone > p,
+  .footer-container .col .phone > i {
+    font-size: 24px;
+  }
+
+  .footer-container .col .logo .vt,
+  .footer-container .col .logo .bwt {
+    height: 52px;
+  }
+
+  .footer-container .col .logo .moh {
+    height: 64px;
+    width: 72px;
+  }
   .footer-container .col > form {
     align-items: center;
   }
@@ -225,6 +241,10 @@
     width: 80vw;
   }
 
+  .decorator {
+    margin-top: 10px;
+    margin-bottom: 24px;
+  }
   .footer-container .col {
     padding-left: 0px;
     padding-right: 0px;
@@ -237,6 +257,6 @@
     font-size: 36px;
   }
   .footer-container .col .phone {
-    margin-top: -40px;
+    margin-top: -20px;
   }
 }

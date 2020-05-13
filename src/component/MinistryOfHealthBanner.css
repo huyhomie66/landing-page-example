@@ -1,11 +1,10 @@
 .moh-banner {
-  padding-top: 7vh;
   display: flex;
   flex-direction: column;
 }
 
 .moh-banner-wrapper {
-  background-image: url("../assets/image//gradient-02.jpg");
+  background-image: url("../assets/image/gradient-02.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-left: -24px;

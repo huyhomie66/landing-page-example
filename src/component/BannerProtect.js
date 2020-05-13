@@ -17,15 +17,9 @@ export default () => {
 
   const { t } = useTranslation();
   return (
-    <div
-      style={{
-        backgroundImage: `url(${require("../assets/image/gradient-02.jpg")})`,
-      }}
-    >
-      <Container className="banner-pt" wrapperClassName="banner-pt-wrapper">
-        <h1>{t("protect")}</h1>
-        <div id="animation"></div>
-      </Container>
-    </div>
+    <Container className="banner-pt" wrapperClassName="banner-pt-wrapper">
+      <h1>{t("protect")}</h1>
+      <div id="animation"></div>
+    </Container>
   );
 };

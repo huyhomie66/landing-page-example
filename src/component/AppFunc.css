@@ -38,12 +38,22 @@
 
 @media screen and (max-width: 600px) {
   .app-funcs .col img {
-    width: 71px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
   }
+
+  .app-funcs .col p {
+    font-size: 16px;
+  }
+
   .app-funcs .col {
     flex-basis: 100%;
   }
+
+  .app-funcs .col h3 {
+    font-size: 24px;
+  }
+
   .app-funcs {
     margin-left: -0px;
     margin-right: -0px;
